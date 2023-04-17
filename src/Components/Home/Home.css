@@ -1,0 +1,135 @@
+.Home-bg {
+    height: 80vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://i.postimg.cc/YSc0MtyG/Capture.png');
+    padding-left: 15px;
+}
+
+.container {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 36px;
+}
+
+h3 {
+    font-size: 40px;
+    color: white;
+}
+
+button {
+    background-color: black;
+    color: white;
+}
+
+.Home-bg p {
+    color: white;
+}
+
+.container img {
+    width: 80px;
+    border-radius: 10px;
+}
+
+.home__heder {
+    margin: 15px 0px;
+    background-color: white;
+    padding: 10px;
+}
+
+.home__heder h2 {
+    color: black;
+    font-size: 25px;
+}
+
+.home__heder p {
+    color: rgb(0, 0, 0);
+}
+
+.logo_home {
+    background-color: white;
+    padding: 10px;
+}
+
+.logo_home div {
+    padding: 10px;
+}
+
+.logo_home div img {
+    width: 140px;
+}
+
+.logo_home div h5 {
+    font-size: 17px;
+    margin: 35px 0px;
+}
+
+.dasbord__home {
+    padding: 10px;
+    background-color: white;
+}
+
+.dasbord__home div {
+    padding: 10px;
+    margin: 38px 0px;
+}
+
+.dasbord__home div p {
+    color: rgba(51, 61, 70, .5);
+    font-size: 20px;
+    margin: 19px 0px;
+}
+
+.dasbord__home div h4 {
+    font-size: 29px;
+}
+
+.dasbord__home div h5 {
+    font-size: 17px;
+    color: black;
+}
+
+footer .footer {
+    width: 50%;
+    padding: 10px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+footer .footer h6 {
+    color: white;
+    font-size: 17px;
+}
+
+footer .footer h5 {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 45px;
+}
+
+footer .footer i {
+    color: white;
+    margin: 4px 8px;
+    font-size: 36px;
+}
+
+footer .footer img {
+    width: 114px;
+    padding: 14px;
+    border-radius: 29px;
+    margin: 15px 0px;
+}

@@ -1,0 +1,113 @@
+.about_container {
+    background-color: white;
+}
+
+.about-co img {
+    width: 100%;
+    height: 36vh;
+}
+
+/* about 1 */
+.about-1 {
+    width: 100%;
+    text-align: center;
+}
+
+.about-1 h3 {
+    color: black;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.about-1 p {
+    color: #222222;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.about-1 h5 {
+    padding: 10px 8px;
+    font-size: 21px;
+}
+
+.about-1 img {
+    width: 100%;
+    height: 50vh;
+}
+
+.about-1 h6 {
+    margin: 33px 0px 31px;
+    font-size: 20px;
+    text-align: left;
+    line-height: 32px;
+}
+
+.about-1 h6 span {
+    font-weight: 800;
+}
+
+.about_div {
+    height: 30vh !important;
+    margin-top: -136px;
+}
+
+.about-1 h2 {
+    text-align: left;
+    line-height: 27px;
+    padding: 0px 12px;
+    margin: 10px 0px;
+}
+
+.about-1 strong {
+    color: black;
+}
+
+.about-1 h1 {
+    color: black !important;
+    text-align: left;
+    padding: 10px;
+    font-weight: 600;
+    margin-bottom: 28px;
+}
+
+.doenload {
+    margin: 20px 0px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+
+.padding_ttt {
+    padding-top: 30px !important;
+}
+
+.ff-img {
+    height: 23vh !important;
+}
+
+.doenloadfff {}
+
+.fffffff {
+    margin-top: 10px !important;
+    background-color: black;
+    padding: 10px 0px !important;
+}
+
+.footerss img {
+    width: 100%;
+    height: 77vh;
+
+}
+
+span {
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
+
+}
+
+.impress{
+    height: 20vh !important;
+    margin-top: 10px !important;
+}

@@ -1,0 +1,62 @@
+.form__submit {
+    background-color: #222222;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.uplod_img {
+    width: 30%;
+    border: 1px dotted white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: inherit;
+}
+
+.uplod_img img {
+    width: 390px;
+    height: 400px;
+}
+
+.uplod_img .progress {
+    width: 400px;
+}
+
+strong {
+    color: white;
+}
+
+.uplod_img button {
+    width: 300px;
+    background-image: linear-gradient(45deg, #ffd800, #ffa8a8);
+    height: 6vh;
+    border-radius: 26px;
+}
+
+
+@media (min-width: 0px) and (max-width: 500px) { 
+    .uplod_img{
+        width: 100%;
+        padding-top: 50px;
+    }
+    .uplod_img img{
+        width: 100%;
+    }
+    .uplod_img .progress{
+        width: 100%;
+    }
+    strong{
+        font-size: 15px;
+    }
+    .f_up{
+        padding-top: 80px;
+    }
+}

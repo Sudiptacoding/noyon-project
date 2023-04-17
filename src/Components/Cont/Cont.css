@@ -1,0 +1,41 @@
+.cont {
+    color: white;
+    padding-top: 200px;
+    background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/340860336_1876976292681035_3069099411790744796_n.jpg?stp=dst-jpg_s240x240&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeFjeFypj8PyR2eJMGCInz5pZ9qCgB_gKO9n2oKAH-Ao727oFW8sD1tsKQA-h0e_33dZMHdD8jFW4zliun6KDdzi&_nc_ohc=n_8ksek-VnIAX8e76zs&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTotf4s3TysDY9SC7a8lLOEgN89hu_0wk6QxgBuDP66_Q&oe=64644029');
+    width: 100%;
+
+}
+
+.bf-con {
+    background-color: #c98a9f;
+    padding: 15px;
+}
+
+.bf-con h1 {
+    color: navy;
+    font-size: 22px;
+    text-align: left;
+    font-weight: 700;
+
+}
+
+.bf-con h2 {
+    color: white;
+    font-size: 20px;
+    line-height: 41px;
+}
+.bf-con div{
+    width: 100%;
+    padding: 0px 5px;
+}
+.cont h3{
+    color: peachpuff;
+    text-align: center;
+}
+.cont button{
+    width: 272px;
+    margin: 15px auto;
+    background-color: navy;
+    border: navajowhite;
+    border-radius: 10px;
+}

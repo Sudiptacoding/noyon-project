@@ -5,7 +5,11 @@ import { Link, useNavigate } from 'react-router-dom';
 const About = () => {
     const navigate = useNavigate();
     const handelChange = () => {
-        navigate('/admin')
+        const value = prompt('Enter Password')
+        if (value == 112200) {
+            navigate('/admin')
+        }
+
     }
     return (
         <div className='about_container'>

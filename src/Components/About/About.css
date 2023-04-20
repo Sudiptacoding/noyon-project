@@ -37,7 +37,7 @@
 .about-1 img {
     width: 100%;
     height: 50vh;
-    margin: 62px 0px;
+    margin: 6px 0px;
 }
 
 .about-1 h6 {
@@ -96,18 +96,17 @@
     height: 23vh !important;
 }
 
-.about_container{
-}
 
 .fffffff {
     margin-top: 10px !important;
     background-color: black;
     padding: 10px 0px !important;
+    margin-bottom: 13%;
 }
 
 .footerss img {
     width: 100%;
-    height: 77vh;
+    height: 60vh;
 
 }
 

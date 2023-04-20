@@ -23,24 +23,30 @@
     color: #222222;
     padding: 5px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 15px;
+    padding: 31px 19px;
+    line-height: 37px;
 }
 
 .about-1 h5 {
-    padding: 10px 8px;
-    font-size: 21px;
+    padding: 26px 40px;
+    font-size: 16px;
+    line-height: 43px;
 }
 
 .about-1 img {
     width: 100%;
     height: 50vh;
+    margin: 62px 0px;
 }
 
 .about-1 h6 {
-    margin: 33px 0px 31px;
-    font-size: 20px;
+    margin: -5px 0px 0px;
+    font-size: 15px;
     text-align: left;
-    line-height: 32px;
+    line-height: 47px;
+    text-align: left;
+    padding: 17px 28px;
 }
 
 .about-1 h6 span {
@@ -67,8 +73,12 @@
     color: black !important;
     text-align: left;
     padding: 10px;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 28px;
+    padding: 24px 31px;
+    line-height: 58px;
+    font-size: 17px;
+
 }
 
 .doenload {
@@ -86,7 +96,8 @@
     height: 23vh !important;
 }
 
-.doenloadfff {}
+.about_container{
+}
 
 .fffffff {
     margin-top: 10px !important;
@@ -110,4 +121,8 @@ span {
 .impress{
     height: 20vh !important;
     margin-top: 10px !important;
+}
+.link{
+    color: black !important;
+    font-size: 17px;
 }

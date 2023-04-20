@@ -56,14 +56,15 @@ const Home = () => {
                     <h5>Other Links</h5>
                     <h6>Maro</h6>
                     <h6>Acorn Protocol</h6>
-                    <hr style={{color:'white'}} />
+                    <hr style={{ color: 'white' }} />
                     <h5>Social media</h5>
                     <div>
-                    <i class="fa-solid fa-envelope"></i>
-                    <i class="fa-brands fa-square-instagram"></i>                    
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-twitch"></i>
-                    <i class="fa-solid fa-b"></i>
+                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <a href="https://twitter.com/AcornProtocol?s=09"><i class="fa-brands fa-twitter"></i></a>
+
+                        <i class="fa-brands fa-twitch"></i>
+                        <i class="fa-solid fa-b"></i>
                     </div>
 
 

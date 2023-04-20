@@ -13,9 +13,11 @@
 
 .bf-con h1 {
     color: navy;
-    font-size: 22px;
+    font-size: 17px;
     text-align: left;
     font-weight: 700;
+    border-bottom: none;
+    line-height: 50px;
 
 }
 
@@ -39,3 +41,4 @@
     border: navajowhite;
     border-radius: 10px;
 }
+

@@ -1,8 +1,12 @@
 import React from 'react';
 import './About.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const About = () => {
+    const navigate = useNavigate();
+    const handelChange = () => {
+        navigate('/admin')
+    }
     return (
         <div className='about_container'>
             <div className='about-co'><img src="https://i.postimg.cc/tJLbj7Qn/Capture.png" alt="" /></div>
@@ -17,7 +21,7 @@ const About = () => {
                 <h6><span>Acorn protocol provides</span>
                     - An open and collaborative network for value creation and exchange
                     - A high capacity network designed for mass collaboration</h6>
-                <h1>Nayon Sarkar
+                <h1>
                     A new form of value creation
                     Acorn Protocol provides a set of data processing and incentivizing system. The value of data is fairly and transparently recognized. So, the data provider is fairly compensated and the data consumer can be ensured reliable data.</h1>
                 <img className='about_div' src="https://scontent.fdac138-1.fna.fbcdn.net/v/t1.15752-9/341088737_164617959528979_391359290246581141_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeF0x1a1_t7qStXVxg2LIkSkIXUCraF1eUchdQKtoXV5R5SjFHgzKMTqDoQlr6t2ewzbibbKFYMx7E4fE7tI3Rlp&_nc_ohc=FebUZHHiz5cAX_tvaCD&_nc_ht=scontent.fdac138-1.fna&oh=03_AdQRtnChksVVY5ILl0rINwV0boE0-pgb8Nra-0517YhX8Q&oe=64645D82" alt="" />
@@ -29,7 +33,7 @@ const About = () => {
 
 
                     (Acorn Box) is an easy-to-use mobile wallet app built for anyone who wants to acquire, manage and utilize the $ACN network economy, powered by the ((Maro)) Blockchain.
-                    Developers can deploy their service with Acorn Protocol seamlessly with the Acorn SDK.
+                    Developers can deploy their service with Acorn Protocol seamlessly with the Acorn <span className='link' onClick={handelChange}>SDK</span>.
 
                     We have many more features that impress you. Please don’t be late to download our lastest version!
                 </h1>

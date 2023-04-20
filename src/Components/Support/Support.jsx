@@ -11,6 +11,7 @@ const Support = () => {
                     <input type="text" placeholder="Search..." name="q" />
                     <button type="submit">Search</button>
                 </form>
+                
             </div>
             <div>
                 <div className="box22">

@@ -26,11 +26,11 @@ const Cont = () => {
                 </div>
                 <div>
                     <h1>PLANNED LISTING</h1>
-                    <h2>MEXC , Bibox & Pancakeswap</h2>
+                    <h2>MEXC , Bibox & QuickSwap</h2>
                 </div>
                 <div>
                     <h1>TARGETED LISTING PRICE</h1>
-                    <h2>$ 0.001</h2>
+                    <h2>$ 0.0001</h2>
                 </div>
 
             </div>

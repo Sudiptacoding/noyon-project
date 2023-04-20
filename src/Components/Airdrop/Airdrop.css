@@ -1,0 +1,50 @@
+.airdrop img {
+    width: 100%;
+
+}
+
+.airdrop {
+    background-color: #ffffffed;
+}
+
+.airdrop h1 {
+    font-size: 15px;
+    text-align: left;
+    line-height: 28px;
+    padding: 21px 39px;
+    color: black !important;
+}
+
+.airdrop h2 {
+    line-height: 26px;
+    padding: 10px 22px;
+    font-size: 15px;
+}
+
+.airdrop h2 a {
+    color: #0000ffa6;
+}
+
+.airdrop h3 {
+    color: black;
+    font-size: 16px;
+    padding: 27px 28px;
+}
+
+.airdrop form {
+    background-color: rgb(255, 255, 255);
+    line-height: 40px;
+}
+
+.airdrop form label {
+    color: rgb(0, 0, 0) !important;
+    margin-top: -7px;
+}
+
+.airdrop form input {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.airdrop input[type='submit']{
+    padding: 4px 10px !important;
+}

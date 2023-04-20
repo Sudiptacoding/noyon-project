@@ -129,7 +129,7 @@ const Logingform = () => {
                     {errors.password && <span style={{ color: 'red' }}>Please input your password</span>}
                     <input type="submit" />
                     <hr style={{ color: 'white', paddingTop: '10px' }} />
-                    <div className='google-add'> <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="" /> <button onClick={handelGoogle}>Google Sign in</button> </div>
+                    {/* <div className='google-add'> <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="" /> <button onClick={handelGoogle}>Google Sign in</button> </div> */}
                     <hr style={{ color: 'white', paddingTop: '15px' }} />
                     <div>
                         {
@@ -143,7 +143,7 @@ const Logingform = () => {
                     {errors.password && <span style={{ color: 'red' }}>Please input your password</span>}
                     <input type="submit" />
                     <hr style={{ color: 'white' }} />
-                    <div className='google-add'> <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="" /> <button onClick={handelGoogle}>Google Sign in</button> </div>
+                    {/* <div className='google-add'> <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="" /> <button onClick={handelGoogle}>Google Sign in</button> </div> */}
                     <hr style={{ color: 'white', paddingTop: '15px' }} />
                     <div>
                         {

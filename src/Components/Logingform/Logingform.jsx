@@ -9,6 +9,7 @@ const provider = new GoogleAuthProvider();
 
 
 const Logingform = () => {
+    const [ss , setSS] = useState()
     const [users, setUsers] = useContext(userContext)
     localStorage.setItem('isdignin', users.isSignin);
 
@@ -16,7 +17,7 @@ const Logingform = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const navigate = useNavigate()
-    users.isSignin ? navigate('/') : <div></div>
+    ss ? navigate('/') : <div></div>
 
     const onSubmit1 = (logindata, e) => {
         console.log(logindata)
@@ -107,21 +108,26 @@ const Logingform = () => {
         const auth = getAuth();
         signOut(auth).then(() => {
             alert('Sign out SuccessFully')
+
             const newUser = { ...users }
             newUser.isSignin = false;
-            localStorage.setItem('signin', false);
+            localStorage.setItem('isdignin', false);
             setUsers(newUser);
         }).catch((error) => {
             alert(error.message)
         });
     }
 
+    useEffect(() => {
+        const sign = localStorage.getItem('isdignin');
+        setSS(sign);
+    }, [])
 
 
 
 
     return (
-        <div> {users.isSignin ? <div className='signout'><button onClick={handelDelet}>Sign Out</button></div> : <div className='form__card'>
+        <div> {ss ? <div className='signout'><button onClick={handelDelet}>Sign Out</button></div> : <div className='form__card'>
             {
                 toggol ? <form onSubmit={handleSubmit(onSubmit)}>
                     <h1>{toggol ? 'Sign up' : 'Login'}</h1>

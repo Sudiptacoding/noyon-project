@@ -28,9 +28,6 @@ const App = () => {
   useEffect(() => {
     const sign = localStorage.getItem('isdignin');
     setLogin(sign);
-    const newSign = { ...users }
-    newSign.isSignin = sign;
-    setUsers(newSign)
   }, [])
   console.log(login)
   return (

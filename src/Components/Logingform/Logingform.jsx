@@ -10,6 +10,8 @@ const provider = new GoogleAuthProvider();
 
 const Logingform = () => {
     const [users, setUsers] = useContext(userContext)
+    localStorage.setItem('isdignin', users.isSignin);
+
     const [toggol, setToggol] = useState(false)
     const { register, handleSubmit, formState: { errors } } = useForm();
 
@@ -95,7 +97,7 @@ const Logingform = () => {
                 alert(errorMessage)
                 const newUser = { ...users }
                 newUser.isSignin = false;
-                localStorage.setItem('signin',false);
+                localStorage.setItem('signin', false);
                 setUsers(newUser);
 
             });

@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { storage } from '../firebase.config';
 import { ref, uploadBytesResumable, getDownloadURL, listAll } from "firebase/storage";
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
 import './UplodData.css'
 import { Link, useNavigate } from 'react-router-dom';
+import { userContext } from '../../App';
 
 const UplodData = () => {
+    const [users, setUsers] = useContext(userContext);
     const navigate = useNavigate()
 
     const [backurl, setBackurl] = useState(null);
@@ -22,6 +24,7 @@ const UplodData = () => {
 
 
     const handelImageChange = (e) => {
+
         if (e.target.files[0]) {
             const storageRef = ref(storage, `images/${e.target.files[0].name}`);
             const uploadTask = uploadBytesResumable(storageRef, e.target.files[0]);
@@ -117,26 +120,27 @@ const UplodData = () => {
 
 
 
+
     const handelSubmit = () => {
-        if (backurl && fullurl && fonturl) {
-            const existingData = localStorage.getItem('myData') || '[]';
-            const parsedData = JSON.parse(existingData);
-            const newItem = { Fonturl: `${fonturl}`, Backurl: `${backurl}`, Fullurl: `${fullurl}`, Date: new Date() };
-            parsedData.push(newItem);
-            localStorage.setItem('myData', JSON.stringify(parsedData));
 
-            const clearfont = document.getElementById('clearfont')
-            const clearback = document.getElementById('clearback')
-            const clearfull = document.getElementById('clearfull')
-            clearfont.innerHTML = ''
-            clearback.innerHTML = ''
-            clearfull.innerHTML = ''
-            alert('Uplood Successfully')
+        if (backurl && fullurl && fonturl && users.Acn && users.Email && users.Name && users.Polygon && users.Refer && users.Talygram && users.Talygram2 && users.Tweter) {
+            const newItem = { Fonturl: `${fonturl}`, Backurl: `${backurl}`, Fullurl: `${fullurl}`, Date: new Date(), Acn: `${users.Acn}`, Email: `${users.Email}`, Name: `${users.Name}`, Polygon: `${users.Polygon}`, Refer: `${users.Refer}`, Talygram: `${users.Talygram}`, Talygram2: `${users.Talygram2}`, Tweter: `${users.Tweter}`, };
+            fetch('https://shy-pear-bighorn-sheep-coat.cyclic.app/users', {
+                method: 'POST',
+                body: JSON.stringify(newItem),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+            })
+                .then((response) => response.json())
+                .then((json) => console.log(json));
+            alert('Upload successfully')
             navigate('/')
-
         } else {
-            alert('Please Wait')
+            alert('Please wait')
         }
+
+
     }
     return (
         <div className='form__submit'>

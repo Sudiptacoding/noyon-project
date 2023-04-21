@@ -1,19 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Airdrop.css';
 import { useForm } from "react-hook-form";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { userContext } from '../../App';
 
 
 const Airdrop = () => {
-
+const [users, setUsers] = useContext(userContext)
+const navigate = useNavigate()
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = (data, e) => {
-
-        const existingData = localStorage.getItem('userDetles') || '[]';
-        const parsedData = JSON.parse(existingData);
-        // ডাটা গেট এখানথেকে হবে
-
-        console.log(parsedData)
         const newItem = {
             Email: `${data.Email}`,
             Acn: `${data.Email}`,
@@ -24,11 +20,9 @@ const Airdrop = () => {
             Talygram2: `${data.teweter2}`,
             Tweter: `${data.tweter}`,
         };
-        parsedData.push(newItem);
-
-        localStorage.setItem('userDetles', JSON.stringify(parsedData));
-
-        alert('Your document subbmit')
+        const newItems = {...users , ...newItem}
+        setUsers(newItems)
+        navigate('/verification')
         e.target.reset();
     };
 

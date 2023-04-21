@@ -1,4 +1,4 @@
-.airdrop img {
+/* .airdrop img {
     width: 100%;
 
 }
@@ -47,4 +47,15 @@
 
 .airdrop input[type='submit']{
     padding: 4px 10px !important;
+} */
+
+
+.airdrop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
 }

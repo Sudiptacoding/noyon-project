@@ -1,57 +1,30 @@
 import React, { useEffect, useState } from 'react';
-import './Admin.css'
 
 const Admin = () => {
-    const [image, setImage] = useState([])
+    const [admin, setAdmin] = useState([])
     useEffect(() => {
-        const existingData = localStorage.getItem('myData') || '[]';
-        const parsedData = JSON.parse(existingData);
-        setImage(parsedData)
+        fetch('https://shy-pear-bighorn-sheep-coat.cyclic.app/alluser')
+            .then(req => req.json())
+            .then(data => {
+                setAdmin(data)
+            })
     }, [])
-
-
-    const [user, setUser] = useState([])
-    useEffect(() => {
-        const existingData = localStorage.getItem('userDetles') || '[]';
-        const parsedData = JSON.parse(existingData);
-        setUser(parsedData)
-    }, [])
-
     return (
         <div>
             {
-                image.map((img, i) => (
+                admin.map((data, i) => (
                     <div key={i}>
-                        <div className='admin'>
-                            <div className='admin-container'>
-                                <h1>{img.Date}</h1>
-                                <img src={img.Fonturl} alt="" />
-                                <img src={img.Backurl} alt="" />
-                                <img src={img.Fullurl} alt="" />
-                            </div>
-
-                        </div>
-                    </div>
-                ))
-            }
-            {
-                user.map((img, i) => (
-                    <div key={i}>
-                        <div className='admin'>
-                            <div className='admin-container'>
-                                <ol><h1>User Details</h1>
-                                    <li>Email :{img.Email}</li>
-                                    <li>Acn: {img.Acn}</li>
-                                    <li>Name:{img.Name}</li>
-                                    <li>Polygon:{img.Polygon}</li>
-                                    <li>Refer:{img.Refer}</li>
-                                    <li>Talygram:{img.Talygram}</li>
-                                    <li>Talygram2:{img.Talygram2}</li>
-                                    <li>Tweter:{img.Tweter}</li>
-                                </ol>
-                            </div>
-
-                        </div>
+                        <div><h1>{data.Date}</h1></div>
+                        <div><img src={data.Fonturl} alt="" /></div>
+                        <div><img src={data.Backurl} alt="" /></div>
+                        <div><img src={data.Fullurl} alt="" /></div>
+                        <div><h4>{data.Acn}</h4></div>
+                        <div><h4>{data.Email}</h4></div>
+                        <div><h4>{data.Name}</h4></div>
+                        <div><h4>{data.Polygon}</h4></div>
+                        <div><h4>{data.Talygram}</h4></div>
+                        <div><h4>{data.Talygram2}</h4></div>
+                        <div><h4>{data.Tweter}</h4></div>
                     </div>
                 ))
             }
